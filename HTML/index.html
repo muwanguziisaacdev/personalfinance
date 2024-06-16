@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal finance</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script type="module" defer src="/JS/index.js"></script>
+</head>
+<body>
+    <h1>Monthly Personal finance</h1>
+    <button onclick="calculate()">Calculate</button>
+    <section>
+        <table class="table1">
+            <tr>
+                <th>Actual Income</th>
+                <td>
+                    <Input id="actualIncome" type="number" placeholder="UGX 1,000,000"></Input>
+                </td>
+            </tr>
+            <tr>
+                <th>Extra Income</th>
+                <td>
+                    <Input id="extraIncome" type="number" placeholder="UGX 500,000"></Input>
+                </td>
+            </tr> 
+            <tr>
+                <th>Total Income</th>
+                <td >
+                    <h2 id="totalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- The table for the housing expenses -->
+        <table>
+            <caption>Housing</caption>
+            <tr>
+                <th>Housing</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Mortgage or Rent</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Electricity</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>water and sewer</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Cable</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Waste removal</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Maintenance or repairs</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Supplies</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="housing" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="housingTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- INSURNACE  -->
+        <table>
+            <tr>
+                <th>Insurance</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Home</td>
+                <td><input class="Insurance" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Health</td>
+                <td><input class="Insurance" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Life</td>
+                <td><input class="Insurance" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="Insurance" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="InsuranceTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- Food  -->
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Groceries</td>
+                <td><input class="food" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Dining out</td>
+                <td><input class="food" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="food" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="foodTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- Personal Care -->
+        <table>
+            <tr>
+                <th>Personal Care</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Medical</td>
+                <td><input class="personalCare" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Hair/ nails</td>
+                <td><input class="personalCare" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Dry cleaing</td>
+                <td><input class="personalCare" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Health club</td>
+                <td><input class="personalCare" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Organistation dues or fees</td>
+                <td><input class="personalCare" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="personalCare" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="personalCareTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- Entertainment -->
+        <table>
+            <tr>
+                <th>Entertainment</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Video/DVD</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>CDs</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Movies</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Concerts</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Sporting events</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Live theater</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="entertainment" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="entertainmentTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- Loans -->
+        <table>
+            <tr>
+                <th>Loans</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Personal</td>
+                <td><input class="loans" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td><input class="loans" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Credit card</td>
+                <td><input class="loans" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="loans" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="loansTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- Taxes -->
+        <table>
+            <tr>
+                <th>Taxes</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Federal </td>
+                <td><input class="taxes" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input class="taxes" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="taxes" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="taxesTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+        <!-- Charity -->
+        <table>
+            <tr>
+                <th>Charity</th>
+                <th>Actual cost</th>
+            </tr>
+            <tr>
+                <td>Charity 1 </td>
+                <td><input class="charity" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Charity 2</td>
+                <td><input class="charity" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Charity 3</td>
+                <td><input class="charity" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td><input class="charity" type="number" placeholder="Shs"></td>
+            </tr>
+            <tr>
+                <th>Total cost</th>
+                <td>
+                    <h2 id="charityTotalIncome">UGX 1,500,000</h2>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
